@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <Navbar/>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
@@ -8,27 +9,13 @@
   </div>
 </template>
 
-<style lang="scss" src="./assets/sass/main.scss">
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
+<script>
+import Navbar from "@/components/Navbar.vue";
+export default {
+  components: {
+    Navbar
   }
-
-  #nav {
-    padding: 30px;
-
-    a {
-     font-weight: bold;
-     //  color: #2c3e50;
-     color: rgba(180, 53, 53, 0.815);
-
-      &.router-link-exact-active {
-        color: #42b983;
-     }
-   }
- }
-
+};
+</script>
+<style lang="scss"  src="./assets/sass/main.scss">
 </style>
