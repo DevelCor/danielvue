@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+.presentacion{
+    background: rgba(20, 53, 63, 0.589);
+    display: flex;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+.presentacion_{
+    
+}
+.daniel{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0px;
+    text-align: center;
+    display: block;
+}
+.descripcion{
+    display: block;
+    font-size: 28px;
+    color: #ffffff;
+}
+.boton{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 25px;
+    display: inline-block;
+    margin: 0em 6.5px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #FE333E;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #884343;
+    transition: all 0.4s;
+    &:hover{
+        color: #ffffff;
+        background-color: #c64848;
+    }
+}

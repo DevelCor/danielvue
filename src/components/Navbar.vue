@@ -1,11 +1,15 @@
 <template>
-    <div id="Navbar">
-        <h1>Logo</h1>
-        <h3> Inicio</h3>
-        <h3>Sobre mi</h3>
-        <h3>Contacto</h3>
+    <div>
+        <div class="Navbar">
+            <div>
+                <h1 class="Logo">Logo</h1>
+                    <nav class="menu">
+                        <ul class="ul">
+                            <li class="li"> <router-link to="/">Home</router-link> </li>
+                            <li class="li"> <router-link to="/about">About</router-link> </li>
+                        </ul>
+                    </nav>
+                </div>      
+            </div>
     </div>
 </template>
-
-<style lang="scss"  src="./assets/sass/Navbar.scss">
-</style>

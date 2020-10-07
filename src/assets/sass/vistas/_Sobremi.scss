@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.about_me_{
+    background: rgb(19, 54, 54);
+    color: white;
+    height: 85vh;
+    
+    .sobremi_tittle{
+        font-size: 30px;
+        font-weight: lighter;
+        letter-spacing: 0.035em;
+        padding-top: 60px;
+        
+    }
+    .habilidades_{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 17% 0 17%;
+        margin-top: 8%;
+        .biblio{
+            width: 45%;
+            text-align: left;
+            text-indent: 1.1em;
+        }
+        .skills{
+            width: 45%;
+        }
+    }
+    
+}

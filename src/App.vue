@@ -2,8 +2,6 @@
   <div id="app">
     <div id="nav">
       <Navbar/>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
@@ -13,9 +11,10 @@
 import Navbar from "@/components/Navbar.vue";
 export default {
   components: {
-    Navbar
+     Navbar
   }
 };
 </script>
+
 <style lang="scss"  src="./assets/sass/main.scss">
 </style>
