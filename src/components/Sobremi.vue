@@ -3,8 +3,8 @@
         <div class="about_me_">
             <div class="historia_tittle">
                 <h3 class="sobremi_tittle">
-                    Pequeña historia 
-                    <strong>Sobre mí</strong>
+                    <span class="history_span"> Pequeña historia </span>  
+                    <span class="sobremi_span">Sobre mí</span>
                 </h3>
             </div>
             <div class="habilidades_">
@@ -16,9 +16,64 @@
                         </p>
                     </div>
                     <div class="skills">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur ullam aperiam, optio mollitia adipisci velit tempora reiciendis! Sapiente repudiandae minima, accusamus voluptas ipsa quibusdam, fuga illo ab adipisci ratione itaque.</p>
+                        <span class="coding">Front-end/back-end</span>
+                        <div class="skill">
+                            <span>HTML</span>
+                            <radial-progress-bar :diameter="60"
+                             :startColor= "'#42B983'"
+                             :stopColor= "'#5B6E65'"
+                             :completed-steps="completedSteps"
+                             :total-steps="totalSteps">
+                             </radial-progress-bar>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <radial-progress-bar :diameter="60"
+                             :startColor= "'#42B983'"
+                             :stopColor= "'#5B6E65'"
+                             :completed-steps="2"
+                             :total-steps="totalSteps">
+                             </radial-progress-bar>
+                        </div>
+                        <div class="skill">
+                            <span>javascript</span>
+                            <radial-progress-bar :diameter="60"
+                             :startColor= "'#42B983'"
+                             :stopColor= "'#5B6E65'"
+                             :completed-steps="6"
+                             :total-steps="totalSteps">
+                             </radial-progress-bar>
+                        </div>
+                        <div class="skill">
+                            <span>vue</span>
+                            <radial-progress-bar :diameter="60"
+                             :startColor= "'#42B983'"
+                             :stopColor= "'#5B6E65'"
+                             :completed-steps="8"
+                             :total-steps="totalSteps">
+                             </radial-progress-bar>
+                        </div>
                     </div>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+import RadialProgressBar from 'vue-radial-progress'
+
+    export default {
+    data () {
+        return {
+        completedSteps: 5,
+        totalSteps: 10,
+       // startColor: '#ffffff',
+       // stopColor: '#ffffff'
+        }
+    },
+
+    components: {
+        RadialProgressBar
+    }
+    }
+</script>

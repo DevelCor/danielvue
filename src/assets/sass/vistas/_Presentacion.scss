@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 .presentacion{
-    background: rgba(20, 53, 63, 0.589);
+    background: url("./imagenes/fondo.jpg") no-repeat left center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
-    height: 98vh;
+    height: 100vh;
+    width: 98.7vw;
+    margin: -68px 0 0 -8px;
     align-items: center;
     justify-content: center;
-}
-.presentacion_{
-    
+    font-family: 'Poppins', sans-serif;
 }
 .daniel{
     font-size: 45px;
@@ -29,16 +32,17 @@
     padding: 15px 25px;
     display: inline-block;
     margin: 0em 6.5px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
     color: #ffffff;
-    background-color: #FE333E;
+    background-color: #42B983;
     text-transform: uppercase;
     border-radius: 4px;
-    border: 1px solid #884343;
+    border: 1px solid #42B983;
     transition: all 0.4s;
     &:hover{
         color: #ffffff;
-        background-color: #c64848;
+        background-color: #5B6E65;
+        border: 1px solid;
     }
 }
